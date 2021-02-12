@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+    <body>
+        <div class="container">
+            <div class="top">
+                <form id="form1" autocomplete="off" action="/createTodo" method="POST">
+                    <input id="txt" type="text" name="content" placeholder="Add something..">
+
+                    <button type="submit" id="btn-add">ADD</button>
+                </form>
+            </div>
+            <div class="bottom">
+                
+                <div>
+                    <div class="listElement">Helloo</div>
+                    <div class="closeList">x</div>
+                </div>
+                <% if(todos.length> 0){ %>
+                    <% todos.forEach((todo)=>{ %>
+                        <div>
+                            <div class="listElement">
+                                <%= todo.content %>
+                            </div>
+                            <a href="/remove/<%= todo._id %>"><div class="closeList">x</div></a>
+                        </div>
+                    <% }) %>
+                <% } %>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <%- include("./partials/footer.ejs") %>
+
+            <script>
+
+
+
+
+                
+
+
+
+                
+
+            </script>
+    </body>
+
+</html>

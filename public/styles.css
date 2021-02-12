@@ -1,0 +1,109 @@
+
+        *{
+            box-sizing: border-box;
+            border: 0;
+            padding: 0;
+
+        }
+
+        html{
+            height: 100%;
+
+        }
+
+        .container{
+            position: relative;
+            border: 2px solid black;
+            background-color: rgb(253, 217, 97);
+            box-shadow: 1px 2px 8px #333;
+            width: 95%;
+            max-width: 450px;
+            min-width: 260px;
+            min-height: 500px;
+            height: 500px;
+            /* padding: 10px; */
+            margin: 4.15rem auto;
+            border-radius: 5px;
+            
+            overflow-y: scroll;
+            
+        }
+
+        footer{
+            text-align: center;
+            background-color: bisque;
+            margin-bottom: 2rem;
+        }
+
+        .top{
+            /* display: flex;
+            justify-items: center; */
+            text-align: center;
+            /* background-color: bisque; */
+            margin-bottom: 0.25rem;
+            margin-top: 0.25rem;
+            
+        }
+
+        .bottom{
+            text-align: left;
+            background-color: bisque;
+            padding-left: 8px;
+            
+        }
+
+        #txt{
+            width: 75%;
+            padding: 0.75rem;
+            margin: 0;
+            
+        }
+        #txt:focus{
+            outline: none;
+        }
+
+        #btn-add{
+            width: 22%;
+            padding: 0.75rem;
+            /* margin-left: 3px; */
+            cursor: pointer;   
+            margin: 0;
+            
+        }
+        #btn-add:hover{
+            background-color: #666;
+        }
+
+        .listElement{
+            padding: 0.60rem;
+
+            margin: 10px auto;
+            /* overflow: auto; */
+            width: 75%;
+            /* border: 2px solid red; */
+            display: inline-block;
+            background-color: #fff
+        }
+        .listElement::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .closeList{
+            padding: 0.60rem;
+            margin: 5px auto;
+            display: inline-block;
+            text-align: center;
+            /* border: 2px solid black; */
+            /* position: absolute;
+            right: 5px; */
+            
+            width: 24%;
+            cursor: pointer;
+        }
+        .closeList:hover{
+            background-color: rgb(255,228,125) ;
+        }
+
+    
